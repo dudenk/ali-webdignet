@@ -1,0 +1,36 @@
+[
+  {
+    "title": "Paket Bisnis",
+    "tag": "Paling Populer",
+    "content": "Solusi website lengkap untuk bisnis Anda",
+    "cta": "Mulai Konsultasi",
+    "price": "Rp 1 Jt",
+    "services": [
+      { "item": "Domain Gratis 1 Tahun" },
+      { "item": "Cloud Server" },
+      { "item": "Tema Premium" },
+      { "item": "Gratis Maintenance" },
+      { "item": "10+ Halaman" },
+      { "item": "Fitur Berita / Postingan" },
+      { "item": "Integrasi Sosmed" },
+      { "item": "Pengerjaan 7 Hari" }
+    ]
+  },
+  {
+    "title": "Paket Enterprise",
+    "tag": "Nilai Terbaik",
+    "content": "Solusi website enterprise untuk skala besar",
+    "cta": "Konsultasi Sekarang",
+    "price": "Rp 3 Jt",
+    "services": [
+      { "item": "Domain Gratis 1 Tahun" },
+      { "item": "Cloud Server" },
+      { "item": "Tema Premium" },
+      { "item": "Gratis Maintenance" },
+      { "item": "50+ Halaman" },
+      { "item": "Fitur Berita / Postingan" },
+      { "item": "Integrasi Sosmed" },
+      { "item": "Pengerjaan 15 Hari" }
+    ]
+  }
+]

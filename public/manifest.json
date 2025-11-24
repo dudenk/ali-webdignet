@@ -1,0 +1,25 @@
+{
+  "lang": "id",
+  "dir": "ltr",
+  "name": "Webdignet - Your Growth, Our Technology",
+  "description": "Di Webdignet, kami percaya bahwa teknologi yang tepat dapat mendorong pertumbuhan yang luar biasa. Kami bukan sekadar penyedia jasa, tetapi mitra yang berkomitmen untuk memahami tujuan bisnis Anda.",
+  "short_name": "Webdignet",
+  "theme_color": "#18181B",
+  "background_color": "#ffffff",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

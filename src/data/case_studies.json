@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Mendorong Pertumbuhan.<br>Menyederhanakan Kesuksesan.",
+    "sector": "Desain Web",
+    "content": "<strong>Solusi desain web kustom kami membantu PT TechIndo meningkatkan kehadiran digital dengan interface yang modern dan pengalaman pengguna yang intuitif. </strong> <br><br>Website yang didesain ulang menyederhanakan perjalanan pengguna, meningkatkan aksesibilitas, dan memperkuat kredibilitas brand.",
+    "case_study_link": "https://webdignet.com",
+    "cta": "Lihat studi kasus",
+    "image": "/content-images/spike.news.avif",
+    "image_alt": "iPad menampilkan website studi kasus",
+    "bg": "bg-gradient-to-r from-indigo-500 to-purple-600"
+  },
+  {
+    "title": "Mempercepat Inovasi.<br>Memberdayakan Hasil.",
+    "sector": "Pengembangan",
+    "content": "Desain dan pengembangan dinamis kami menyederhanakan produktivitas, memberikan solusi otomatis, kolaborasi yang seamless, dan wawasan berbasis data",
+    "case_study_link": "https://webdignet.com",
+    "cta": "Lihat studi kasus",
+    "image": "/content-images/pixelate.pictures.avif",
+    "image_alt": "iPad menampilkan desain visual",
+    "bg": "bg-gradient-to-r from-fuchsia-500 to-cyan-500"
+  },
+  {
+    "title": "Tingkatkan Produktivitas,<br>tingkatkan efisiensi.",
+    "sector": "Desain 3D",
+    "content": "Buat, kolaborasi, dan render — semua dalam satu alur kerja yang terpadu. Tim terhubung dan menghasilkan visual yang menakjubkan dalam hitungan menit.",
+    "case_study_link": "https://webdignet.com",
+    "cta": "Lihat studi kasus",
+    "image": "/content-images/brighton.dog.avif",
+    "image_alt": "iPad menampilkan halaman studi kasus",
+    "bg": "bg-gradient-to-r from-pink-500 to-yellow-500"
+  }
+]

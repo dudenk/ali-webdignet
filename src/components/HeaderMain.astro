@@ -1,0 +1,50 @@
+---
+
+import logoDark from '../../public/logo-dark.png'
+import logoWebdignetDark from '../../public/logo-webdignet-dark.png'
+import Image from "astro/components/Image.astro"
+
+const { settings } = Astro.props
+
+---
+
+<header class="wrapper bg-loop font-semibold">
+
+  <!-- Wrapper -->
+  <div class="bs-container py-6 flex justify-between items-center">
+
+    <!-- Logo -->
+    <a class="flex xl:min-w-32 group" href="/" aria-label={ settings.title + ' - Home' }>
+
+      <Image src={logoDark} alt="Webdignet Logo" class="group-hover:-rotate-360 group-hover:scale-80 transition-transform ease-bs-spring duration-1000" height="48" width="auto" />
+      <Image src={logoWebdignetDark} alt="Webdignet Logo" class="ml-2 mt-3 h-[24px] w-auto" />
+    
+    </a>
+
+    <!-- Nav -->
+    <nav class="hidden col-span-6 md:flex mx-auto self-stretch lg:gap-2">
+
+      <!-- Links -->
+      { settings.nav.map( item =>
+
+        <a class="bs-btn !bg-transparent before:translate-y-full hover:before:translate-y-0" href={item.link}>
+          { item.title }
+        </a>
+
+      )}
+
+    </nav>
+
+    <!-- CTA -->
+    <a href="https://wa.me/6285213680367?text=Halo%20Webdignet,%20saya%20tertarik%20dengan%20layanan%20Anda"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="min-w-32 bs-btn inline-block text-center">
+
+      { settings.demo.title }
+
+    </a>
+
+  </div>
+
+</header>

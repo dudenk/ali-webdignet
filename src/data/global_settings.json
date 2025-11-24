@@ -1,0 +1,57 @@
+{
+  "title": "Webdignet - Your Growth, Our Technology",
+  "description": "Di Webdignet, kami percaya bahwa teknologi yang tepat dapat mendorong pertumbuhan yang luar biasa. Kami bukan sekadar penyedia jasa, tetapi mitra yang berkomitmen untuk memahami tujuan bisnis Anda.",
+  "social_image": "/1200x630.jpg",
+  "base_url": "https://webdignet.com",
+  "demo": {
+    "title": "Butuh solusi digital?",
+    "content": "<strong>Dapatkan konsultasi gratis untuk layanan kami</strong>, dan temukan bagaimana tim kami dapat membantu pertumbuhan bisnis Anda.",
+    "cta": "Hubungi via WhatsApp"
+  },
+  "theme_color": "#18181b",
+  "nav": [
+    {
+      "title": "Layanan",
+      "link": "/#services"
+    },
+    {
+      "title": "Studi Kasus",
+      "link": "/#case-studies"
+    },
+    {
+      "title": "Harga",
+      "link": "/#pricing"
+    },
+    {
+      "title": "FAQ",
+      "link": "/#faq"
+    },
+    {
+      "title": "Kontak",
+      "link": "/#newsletter"
+    }
+  ],
+
+  "social_links": [
+    {
+      "title": "WhatsApp",
+      "link": "https://wa.me/6285213680367"
+    },
+    {
+      "title": "Instagram",
+      "link": "https://instagram.com/webdignet"
+    },
+    {
+      "title": "LinkedIn",
+      "link": "https://linkedin.com/company/webdignet"
+    },
+    {
+      "title": "Facebook",
+      "link": "https://facebook.com/webdignet"
+    },
+    {
+      "title": "Twitter / X",
+      "link": "https://twitter.com/webdignet"
+    }
+  ]
+}
