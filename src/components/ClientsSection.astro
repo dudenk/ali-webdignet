@@ -4,13 +4,68 @@ const { title, clients } = Astro.props
 
 ---
 
-<section class="anim-wrapper bs-container bs-mt-lg grid">
+<section class="anim-wrapper bs-container bs-mt-lg">
 
   <!-- Title -->
   { title && <h2 class="bs-h2 text-center" set:html={ title } />}
 
-  <!-- Logos -->
-  <div class="bs-mt-md grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 place-content-center gap-4">
+  <!-- Mobile Carousel -->
+  <div class="bs-mt-md md:hidden">
+
+    <!-- Buttons -->
+    <nav class="clients-st-button-wrapper flex justify-center gap-4 mb-6">
+
+      <!-- Prev -->
+      <button aria-label="Previous slide"
+        class="js-clients-btn-prev group bs-btn rounded-full !p-0 flex items-center justify-center h-8 w-8">
+
+        <svg class="opacity-60 h-3 w-3 -translate-x-[2px] group-active:translate-y-[1px]" height="16" width="25" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.5 8h23m-23 0l6-6m-6 6l6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+      </button>
+
+      <!-- Next -->
+      <button
+        aria-label="Next slide"
+        class="js-clients-btn-next group bs-btn rounded-full !p-0 flex items-center justify-center h-8 w-8 -scale-x-100">
+
+        <svg class="opacity-60 h-3 w-3 -translate-x-[2px] group-active:translate-y-[1px]" height="16" width="25" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.5 8h23m-23 0l6-6m-6 6l6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+      </button>
+    </nav>
+
+    <!-- Swiper Carousel for Mobile -->
+    <div class="js-clients-swiper swiper select-none">
+      <div class="swiper-wrapper">
+
+        { clients.map( item =>
+
+        <div class="swiper-slide">
+          <a class="group py-10 px-5 rounded-xl flex place-content-center bg-bs-surface-2/70 hover:bg-bs-surface-2 transition-colors duration-300" href={ item.link }>
+
+            <img
+              src={ item.image }
+              alt={ item.title }
+              class="opacity-60 max-w-32 min-h-16 group-hover:scale-[1.05] group-hover:-translate-y-1 group-hover:opacity-100 group-hover:-rotate-1 ease-bs-bounce transition-all duration-1000"
+              width="140"
+              height="40"
+              loading="lazy"
+            >
+
+          </a>
+        </div>
+
+        )}
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Desktop Grid -->
+  <div class="bs-mt-md hidden md:grid md:grid-cols-4 lg:grid-cols-4 place-content-center gap-4">
 
     <!-- Logo link -->
      {
@@ -36,3 +91,50 @@ const { title, clients } = Astro.props
   </div>
 
 </section>
+
+<script>
+import Swiper from "swiper"
+import 'swiper/css'
+
+const prev_btn = document.querySelector('.js-clients-btn-prev')
+const next_btn = document.querySelector('.js-clients-btn-next')
+
+const swiper = new Swiper('.js-clients-swiper', {
+  slidesPerView: 2,
+  spaceBetween: 16,
+  speed: 500,
+  loop: true,
+  centeredSlides: false,
+  breakpoints: {
+    '480': {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    }
+  }
+})
+
+// Add event listeners to buttons
+prev_btn.addEventListener('click', () => swiper.slidePrev())
+next_btn.addEventListener('click', () => swiper.slideNext())
+
+// Trigger swiper
+swiper.init?.()
+
+</script>
+
+<style>
+
+/* Show buttons only when in view */
+@keyframes show-buttons {
+  to { opacity: 1; }
+ }
+
+@supports (animation-timeline: view()) {
+  .clients-st-button-wrapper {
+    opacity: 0;
+    animation: show-buttons linear forwards;
+    animation-timeline: view(20% block);
+  }
+}
+
+</style>

@@ -84,7 +84,7 @@ const { title, description } = Astro.props
     <DialogModal id="demo" content={ global_settings.demo }>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/6285213680367?text=Halo%20Webdignet,%20saya%20tertarik%20dengan%20layanan%20Anda"
+    <a href="https://wa.me/6281235504161?text=Halo%20Webdignet,%20saya%20tertarik%20dengan%20layanan%20Anda"
        target="_blank"
        rel="noopener noreferrer"
        class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50 transition-all duration-300 hover:scale-110"
@@ -100,7 +100,7 @@ const { title, description } = Astro.props
         e.preventDefault();
         const name = document.getElementById('wa-name').value;
         const message = document.getElementById('wa-message').value;
-        const whatsappNumber = '6285213680367';
+        const whatsappNumber = '6281235504161';
         const whatsappMessage = `Halo Webdignet, nama saya ${name}. ${message}`;
         const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
         window.open(whatsappUrl, '_blank');

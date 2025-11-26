@@ -5,6 +5,7 @@
     "cta": "Konsultasi Website",
     "image": "/content-images/blackspike-wallpaper-01.avif",
     "image_alt": "Jasa Pembuatan Website",
+    "icon": "../assets/theme-images/icon-website.svg",
     "whatsapp_message": "Halo Webdignet, saya tertarik dengan Jasa Pembuatan Website. Mohon informasi lebih lanjut."
   },
   {
@@ -13,6 +14,7 @@
     "cta": "Demo Aplikasi",
     "image": "/content-images/blackspike-wallpaper-02.avif",
     "image_alt": "Jasa Pembuatan Aplikasi",
+    "icon": "../assets/theme-images/icon-app.svg",
     "whatsapp_message": "Halo Webdignet, saya tertarik dengan Jasa Pembuatan Aplikasi. Mohon informasi lebih lanjut."
   },
   {
@@ -21,6 +23,7 @@
     "cta": "Rencana Iklan",
     "image": "/content-images/blackspike-wallpaper-03.avif",
     "image_alt": "Jasa Iklan Digital",
+    "icon": "../assets/theme-images/icon-ads.svg",
     "whatsapp_message": "Halo Webdignet, saya tertarik dengan Jasa Iklan Digital. Mohon informasi lebih lanjut."
   },
   {
@@ -29,6 +32,7 @@
     "cta": "Analisis SEO",
     "image": "/content-images/blackspike-wallpaper-04.avif",
     "image_alt": "Jasa SEO",
+    "icon": "../assets/theme-images/icon-seo.svg",
     "whatsapp_message": "Halo Webdignet, saya tertarik dengan Jasa SEO. Mohon informasi lebih lanjut."
   },
   {
@@ -37,6 +41,7 @@
     "cta": "Konsultasi Intelligence",
     "image": "/content-images/blackspike-wallpaper-01.avif",
     "image_alt": "Jasa Media Intelligence",
+    "icon": "../assets/theme-images/icon-intelligence.svg",
     "whatsapp_message": "Halo Webdignet, saya tertarik dengan Jasa Media Intelligence. Mohon informasi lebih lanjut."
   },
   {
@@ -45,6 +50,7 @@
     "cta": "Strategi Medsos",
     "image": "/content-images/blackspike-wallpaper-02.avif",
     "image_alt": "Jasa Pengelolaan Medsos",
+    "icon": "../assets/theme-images/icon-social.svg",
     "whatsapp_message": "Halo Webdignet, saya tertarik dengan Jasa Pengelolaan Medsos. Mohon informasi lebih lanjut."
   }
 ]

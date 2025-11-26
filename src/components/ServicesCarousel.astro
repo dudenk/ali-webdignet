@@ -60,14 +60,19 @@ const { title, services } = Astro.props
           {/* Content */}
           <figcaption class="z-10 p-6 sm:p-10 md:p-20 max-w-xl flex flex-col gap-6 h-full">
 
-            {/* Title */}
-            <h2 class="bs-h2" set:html={ item.title } />
+            {/* Icon and Title */}
+            <div class="flex items-center gap-4">
+              <img src={ item.icon } alt={ item.title + ' icon' }
+                   class="w-16 h-16 md:w-20 md:h-20 object-contain"
+                   width="64" height="64" />
+              <h2 class="bs-h2" set:html={ item.title } />
+            </div>
 
             {/* Intro */}
             <div class="bs-body-text text-pretty flex-1" set:html={ item.content } />
 
             {/* Cta */}
-            <a href={`https://wa.me/6285213680367?text=${encodeURIComponent(item.whatsapp_message)}`}
+            <a href={`https://wa.me/6281235504161?text=${encodeURIComponent(item.whatsapp_message)}`}
                target="_blank"
                rel="noopener noreferrer"
                class="bs-btn inline-block self-start bs-mt-sm">
@@ -95,23 +100,26 @@ const prev_btn = document.querySelector('.js-fc-btn-prev')
 const next_btn = document.querySelector('.js-fc-btn-next')
 
 const swiper = new Swiper('.js-fc-swiper', {
-  slidesPerView: 1.05,
-  spaceBetween: 8,
+  slidesPerView: 1,
+  spaceBetween: 16,
   speed: 500,
   loop: true,
-  centeredSlides: true,
+  centeredSlides: false,
   breakpoints: {
     '640': {
       slidesPerView: 1.2,
       spaceBetween: 32,
+      centeredSlides: true,
     },
     '1600': {
       slidesPerView: 1.4,
       spaceBetween: 64,
+      centeredSlides: true,
     },
     '1900': {
       slidesPerView: 1.6,
       spaceBetween: 64,
+      centeredSlides: true,
     },
   }
 
